@@ -1,6 +1,6 @@
 export default function SocialIconRevamped() {
   return (
-    <div className="fixed right-16 top-0 h-full flex flex-col justify-center items-end pr-4 ">
+    <div className="fixed right-16 top-0 h-full hidden md:flex flex-col justify-center items-end pr-4 ">
       <div className="flex flex-col gap-4 border border-gray-300 py-3 px-1 rounded-full">
         <div className="relative group">
           <div className="hidden group-hover:block absolute right-10 top-1/2 -translate-y-1/2 px-2 py-1 bg-zinc-600  text-white rounded shadow">
