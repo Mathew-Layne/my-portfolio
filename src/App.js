@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App bg-slate-950">
 
-      <div className="container mx-auto min-h-screen w-8/12">
+      <div className="container mx-auto min-h-screen w-10/12 md:w-8/12">
 
         <Navbar />
 

@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${hasScrolled ? 'shadow' : ''} flex justify-between text-gray-100 text-sm px-4 pt-6`}>
+    <nav className={`navbar ${hasScrolled ? 'shadow' : ''} flex justify-between text-gray-100 text-sm pt-6`}>
       <h1 className="pt-1 text-lg">My Portfolio</h1>
       <div className={`navlinks py-1 ${showMobileMenu ? 'block' : 'hidden'} sm:flex`}>
         <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400" href="#">Home</a>
