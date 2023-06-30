@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import LoadingScreen from "./LoadingScreen";
 
 const Header = () => {
   let id = "";
@@ -10,7 +9,7 @@ const Header = () => {
   
 
   return (
-    <div className="container text-left h-screen lg:h-[90vh] flex  lg:items-center">
+    <div className="container text-left h-[90vh] flex items-center">
       <div className="w-full md:w-8/12">
         <p className="text-teal-400 text-2xl mb-2">Hello!</p>
         <p className="text-gray-100 text-5xl md:text-7xl mb-2 font-semibold">
