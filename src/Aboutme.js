@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Aboutme = () => {
   return (
-    <div className="container text-gray-400  w-full md:py-16 py-32">
+    <div className="container text-gray-400  w-full py-16">
       <h2 className="text-3xl font-semibold my-6 text-gray-200">About Me</h2>
 
       <div className="content md:flex md:justify-between md:gap-x-20">
