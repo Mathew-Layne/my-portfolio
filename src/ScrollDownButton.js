@@ -21,13 +21,13 @@ const ScrollDownButton = () => {
     clearTimeout(timeoutRef.current);
 
     if(window.scrollY > 100){
-    timeoutRef.current = setTimeout(() => {
+    
       setIsVisible(false);
-    }, 500);    }
+      }
     else{
-    timeoutRef.current = setTimeout(() => {
+    
       setIsVisible(true);
-    }, 500);    }
+     }
 
 
     // Set a delay before updating visibility

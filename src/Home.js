@@ -4,22 +4,21 @@ import Header from './Header';
 import SocialIconRevamped from './SocialIconRevamped';
 import ScrollDownButton from './ScrollDownButton';
 import LoadingScreen from './LoadingScreen';
+import Aboutme from './Aboutme'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    return () => {
-      console.log(isLoading);
-      console.log("useEect Ran");
+    // Simulating loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
 
-    //   setTimeout(() => {
-    //     setIsLoading(false);
-    //   }, 3000);
-    };
+    return () => clearTimeout(timer);
   }, []);
   return (
-    <div className='bg-slate-950'>
-      {isLoading && <LoadingScreen />}
+    <div className='bg-slate-950 scroll-smooth'>
+      {isLoading && <LoadingScreen isLoading={isLoading} />}
 
         <div className=" container mx-auto min-h-screen w-10/12 md:w-8/12">
 
@@ -31,7 +30,8 @@ const Home = () => {
 
       <ScrollDownButton />
 
-      {/* <Aboutme /> */}
+      <Aboutme />
+
     </div>
     </div>
     

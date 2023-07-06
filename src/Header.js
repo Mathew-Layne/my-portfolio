@@ -19,7 +19,7 @@ const Header = () => {
           Web Designer and Developer.
         </p>
 
-        <div className="w-full md:w-7/12 my-5">
+        <div className="w-full md:w-0/12 my-5">
           <p className="text-gray-400">
             With a keen eye for aesthetics and a commitment to excellence, I
             strive to deliver visually striking websites and applications that
@@ -27,13 +27,13 @@ const Header = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap">
-          <button className="bg-teal-400 py-2 px-10 my-2 mr-2 font-semibold">
+        <div className="flex flex-wrap gap-4">
+          <button className="transition duration-200 ease-in-out hover:scale-110 bg-teal-400 py-2 px-10 my-2 font-semibold">
             Hire Me!
           </button>
           <button
             onClick={handleAboutClick}
-            className="text-gray-100 border-2 border-gray-100 py-2 px-10 my-2"
+            className="transition duration-200 ease-in-out hover:scale-110 text-gray-100 border-2 border-gray-100 py-2 px-10 my-2"
           >
             About Me
           </button>

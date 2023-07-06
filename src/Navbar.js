@@ -4,6 +4,10 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
+  const handleResumeClick = () => {
+    window.location.href = 'file:///C:/Users/mathew.layne/Desktop/my-resume.pdf';
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 0) {
@@ -25,11 +29,11 @@ const Navbar = () => {
     <nav className={`navbar ${hasScrolled ? 'shadow' : ''} flex justify-between text-gray-100 text-sm pt-6`}>
       <h1 className="pt-1 text-lg">My Portfolio</h1>
       <div className={`navlinks py-1 ${showMobileMenu ? 'block' : 'hidden'} sm:flex`}>
-        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400" href="#">Home</a>
-        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400" href="#">About Me</a>
-        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400" href="#">Resume</a>
-        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400" href="#">Projects</a>
-        <a className="block mt-1 sm:inline-block sm:mt-0 ml-2 sm:ml-4 hover:text-teal-400" href="#">Contact Me</a>
+        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400 cursor-pointer" href="#">Home</a>
+        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400 cursor-pointer" href="#">About Me</a>
+        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400 cursor-pointer" onClick={handleResumeClick}>Resume</a>
+        <a className="block mt-1 sm:inline-block sm:mt-0 mx-2 sm:mx-4 hover:text-teal-400 cursor-pointer" href="#">Projects</a>
+        <a className="block mt-1 sm:inline-block sm:mt-0 ml-2 sm:ml-4 hover:text-teal-400 cursor-pointer" href="#">Contact Me</a>
       </div>
       <div className="block sm:hidden">
         <button

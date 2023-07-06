@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const LoadingScreen = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    // Simulating loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-
-    return () => clearTimeout(timer);
-  }, []);
+const LoadingScreen = ({isLoading}) => {
+  
   return (
     <div className={`left-0 right-0 top-0 z-50  flex items-center justify-center fixed h-screen bg-slate-950 transition-opacity duration-1000 ease-in-out ${
       isLoading ? 'opacity-100' : 'opacity-0'
